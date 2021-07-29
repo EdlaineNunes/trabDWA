@@ -1,12 +1,12 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produto</title>
 
     <!-- IMPORT PAGES STATIC -->
     <link rel="stylesheet" href="{% static 'css/teste.css' %}">
@@ -14,22 +14,22 @@
 </head>
 
 <body>
-    <h1>Produtos: </h1>
+    <h1>Produto</h1>
     <br>
     <table>
         <thead>
             <tr>
                 <th>Produto</th>
                 <th>Preço</th>
+                <th>Estoque</th>
             </tr>
         </thead>
         <tbody>
-            {% for produto in produtos %}
             <tr>
-                <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a></td>
+                <td><a href="{% url 'index' %}">{{ produto.nome }}</a></td>
                 <td>{{ produto.preco }}</td>
+                <td>{{ produto.estoque }}</td>
             </tr>
-            {% endfor %}
         </tbody>
     </table>
 </body>
