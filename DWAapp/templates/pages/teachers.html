@@ -1,0 +1,23 @@
+{% extends 'main/general.html' %} {% block content %} {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebAdvanced - Quem somos?</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/topbar.css' %}">
+
+</head>
+
+<body>
+    <div class="content-body">
+        <div>
+            <img src="{% static 'images/sistemas_info.png' %}" alt="Computação" class="center-image">
+        </div>
+        <h4>Corpo Docente</h4>
+        <p>
+            O quadro de professores do campus Januária, conta com profissionais capacitados e treinados para lidar bem com seus respectivos compromissos, favorecendo o aprendizado de nossos estudantes.
+        </p>
+        <a href="https://www.ifnmg.edu.br/menu-januaria/corpo-docente">Confira!</a>
+
+    </div>
+</body>
+{% endblock %}

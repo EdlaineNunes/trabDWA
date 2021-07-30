@@ -1,0 +1,21 @@
+{% extends 'main/general.html' %} {% block content %} {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebAdvanced - Galeria de Fotos</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/topbar.css' %}">
+
+</head>
+
+<body>
+    <div class="content-body">
+        <div>
+            <img src="{% static 'images/sistemas_info.png' %}" alt="Computação" class="center-image">
+        </div>
+        <h4>Galeria de Fotos</h4>
+        <p>Visite a nossa página no Instagram:
+            <a href="https://www.instagram.com/ifnmg_oficial/?hl=pt-br"> @ifnmg_oficial</a> </p>
+
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'main/topbar.css' %}"> -->
+</head>
+
+
+<div uk-grid class="portal-header uk-width-1-1 uk-margin-remove-left">
+    <div class="container-logo uk-width-1-6 uk-flex uk-flex-center uk-flex-middle uk-padding-remove" onclick="location.href='/'">
+        <a class="ongoing-logo">WebAdvanced</a>
+    </div>
+    <div class="uk-width-5-6 uk-flex uk-flex-between">
+        <div class="uk-flex uk-flex-middle">
+            <i class="topbar-icon fas fa-bars " onclick="toggleNav()"></i>
+        </div>
+
+        <div class="uk-flex uk-flex-middle uk-margin-right uk-grid-small" uk-grid>
+            <p>Seja bem vindo(a), {{ user }}!</p>
+        </div>
+    </div>
+</div>

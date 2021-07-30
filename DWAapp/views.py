@@ -1,20 +1,32 @@
 from django.shortcuts import render
 from DWAapp.models import *
+from django.contrib import messages
+
 
 # Create your views here.
 def index(request):
-    produtos = Produto.objects.all()
+    return render(request, 'pages/index.html')
+
+def photogallery(request):
+    return render(request, 'pages/photogallery.html')
+
+def courses(request):
+    return render(request, 'pages/courses.html')
+
+def teachers(request):
+    return render(request, 'pages/teachers.html')
+
+def studentsall(request):
+    studentsall = Students.objects.all()
 
     context = {
-        'produtos' : produtos,
+        'studentsall' : studentsall,
     }
-    return render(request, 'index.html', context)
+    return render(request, 'pages/studentsall.html', context)
 
-def produto(request, id):
-    produto = Produto.objects.get(id=id)
+def student(request, id):
+    student = Students.objects.get(id=id)
     context = {
-
-        'produto': produto
-
+        'student': student,
     }
-    return render(request, 'produto.html', context)
+    return render(request, 'pages/student.html', context)

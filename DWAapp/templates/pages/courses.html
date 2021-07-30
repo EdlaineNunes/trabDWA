@@ -1,0 +1,29 @@
+{% extends 'main/general.html' %} {% block content %} {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebAdvanced - Cursos</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/topbar.css' %}">
+
+</head>
+
+<body>
+    <div class="content-body">
+        <div>
+            <img src="{% static 'images/sistemas_info.png' %}" alt="Computação" class="center-image">
+        </div>
+        <h4>Nossos cursos</h4>
+        <ul>
+            <li>Administração;</li>
+            <li>Agronomia;</li>
+            <li>Ciências Biológicas;</li>
+            <li>Engenharia Agrícola e Ambiental;</li>
+            <li>Engenharia Civil;</li>
+            <li>Física;</li>
+            <li>Matemática;</li>
+            <li>Sistemas de Informação;</li>
+            <li>Tecnologia em Análise e Desenvolvimento de Sistemas.</li>
+        </ul>
+    </div>
+</body>
+{% endblock %}

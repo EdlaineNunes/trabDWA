@@ -1,0 +1,44 @@
+{% extends 'main/general.html' %} {% block content %} {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebAdvanced - Informações do Estudante</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/topbar.css' %}">
+
+</head>
+
+<body>
+    <div class="content-body">
+        <div>
+            <img src="{% static 'images/sistemas_info.png' %}" alt="Computação" class="center-image">
+        </div>
+
+        <h4 style="color: white;">Informações do Estudante</h4>
+        <p>Clique no nome do estudante para voltar a tela anterior:</p>
+        <table class="uk-table uk-table-striped">
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Período de Ingresso</th>
+                    <th>Email</th>
+                    <th>Nota</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-link"><a href="{% url 'studentsall' %}">{{ student.name }}</a></td>
+                    <td>{{ student.entryPeriod }}</td>
+                    <td>{{ student.email }}</td>
+                    <td>{{ student.note }}</td>
+                    <td>{{ student.situation }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="uk-flex uk-flex-right">
+            <button class="uk-button button-blue uk-margin-right" onclick="location.href='/painelcontrole/DWAapp/students/{{ student.id }}/change/'">Gerenciar Estudante</button>
+            <button class="uk-button button-yellow uk-margin-right" onclick="location.href='/studentsall/'">Voltar</button>
+        </div>
+    </div>
+</body>
+{% endblock %}

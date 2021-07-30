@@ -1,0 +1,42 @@
+{% extends 'main/general.html' %} {% block content %} {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebAdvanced - Estudantes</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/topbar.css' %}">
+
+</head>
+
+<body>
+    <div class="content-body">
+        <div>
+            <img src="{% static 'images/sistemas_info.png' %}" alt="Computação" class="center-image">
+        </div>
+        <h4 style="color: white;">Estudantes</h4>
+        <p>Clique no nome do estudante desejado para visualizar mais informações:</p>
+
+        <table class="uk-table uk-table-striped">
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Período de Ingresso</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in studentsall %}
+                <tr>
+                    <td class="table-link"><a href="{% url 'student' student.id %}">{{ student.name }}</a></td>
+                    <td>{{ student.entryPeriod }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="uk-flex uk-flex-right">
+            <button class="uk-button button-blue uk-margin-right" onclick="location.href='/painelcontrole/'">Gerenciar Estudantes</button>
+            <button class="uk-button button-red uk-margin-right" onclick="location.href='/'">Cancelar</button>
+        </div>
+    </div>
+
+
+</body>
+{% endblock %}

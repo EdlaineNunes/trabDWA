@@ -1,0 +1,22 @@
+{% extends 'main/general.html' %} {% block content %} {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebAdvanced - Quem somos?</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/topbar.css' %}">
+
+</head>
+
+<body>
+    <div class="content-body">
+        <div>
+            <img src="{% static 'images/sistemas_info.png' %}" alt="Computação" class="center-image">
+        </div>
+        <h4>Sobre nós</h4>
+        <p>Situados na cidade de Januária - MG, temos como objetivo facilitar o aprendizado das pessoas de diferentes faixas etárias para o aprendizado de tecnologias web que permitam o desenvolvimento pessoal, profissional e intelectual. Nosso objetivo
+            é formar pessoas que possam transformar o mundo em um lugar melhor...</p>
+        <br>
+        <p>Esse site é mantido pelo curso de Bacharelado em Sistemas de Informação.</p>
+    </div>
+</body>
+{% endblock %}

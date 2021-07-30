@@ -1,0 +1,42 @@
+.portal-header {
+    background-color: white;
+    height: 60px;
+}
+
+.container-logo {
+    background-color: var(--blue);
+}
+
+.container-logo:hover {
+    background-color: var(--darkblue);
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+.ongoing-logo {
+    color: white;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+}
+
+.ongoing-logo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-picture {
+    height: 50px;
+}
+
+.topbar-icon {
+    color: unset;
+    font-size: 2em;
+}
+
+.topbar-icon:hover {
+    color: var(--blue);
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
