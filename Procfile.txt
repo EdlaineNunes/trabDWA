@@ -1,0 +1,1 @@
+web: gunicorn DWAproject.wsgi --log-file -
