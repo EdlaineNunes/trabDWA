@@ -1,0 +1,57 @@
+.navbar {
+    background-color: var(--darkergrey-navbar);
+    color: white;
+    height: 100vh;
+}
+
+.title-navbar {
+    color: white;
+}
+
+.navbar-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.navbar-link a {
+    color: var(--lightgrey);
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    background-color: var(--darkgrey-background);
+    border-left-color: var(--blue);
+    border-left-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+    border-left-width: 5px;
+}
+
+.navbar-ul>li {
+    margin-left: unset;
+    padding-left: 20%;
+}
+
+.navbar-label {
+    margin-left: -12%;
+}
+
+.selected-tab {
+    background-color: var(--darkgrey-background);
+    border-left-color: var(--blue);
+    border-left-style: solid;
+    width: 150%;
+    border-left-width: 5px;
+}
+
+.menu-footer {
+    background-color: var(--darkergrey-background);
+    color: white;
+    /* color: var(--lightgrey-background); */
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20%;
+}

@@ -1,0 +1,161 @@
+:root {
+    --blue: #0299F0;
+    --darkblue: #0954D9;
+    --red: #db524b;
+    --lightgrey-background: #949ba2;
+    --lightgrey: #6a727a;
+    --grey: #494b54;
+    --darkgrey-background: #33333E;
+    --darkergrey-navbar: #2a2d35;
+    --darkgrey-feedback: #383B43;
+    --dark: #1d1f24;
+    --yellow-button: #d1aa80;
+}
+
+* {
+    text-decoration: none;
+}
+
+html,
+body {
+    height: fit-content;
+    min-height: 100%;
+    background-color: var(--darkgrey-background);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+
+.content {
+    background-color: var(--darkgrey-background);
+    height: 100%;
+}
+
+.content-header {
+    margin-bottom: 50px;
+}
+
+.header-icon {
+    font-size: 3.7em;
+    align-self: center;
+    color: var(--blue);
+}
+
+.header-tittle {
+    align-self: center;
+}
+
+.header-tittle>h3 {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: unset;
+}
+
+.header-tittle>p {
+    /* color: var(--lightgrey-background); */
+    color: white;
+    margin: unset;
+    margin-top: 10px;
+}
+
+h4,
+p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+li {
+    color: white;
+    /* color: var(--lightgrey-background); */
+    margin: 10px 0px 0px 30px;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.size-image {
+    width: 15%;
+    height: 15%;
+}
+
+
+/*  =============================
+    ===      News Buttons     === 
+    =============================   */
+
+.button-blue {
+    background-color: transparent;
+    border-color: var(--blue);
+    border-style: solid;
+    color: white;
+    text-transform: none;
+}
+
+.button-blue:hover {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    border-style: solid;
+    color: white;
+    text-transform: none;
+}
+
+.button-red {
+    background-color: transparent;
+    border-color: var(--red);
+    border-style: solid;
+    color: white;
+    text-transform: none;
+}
+
+.button-red:hover {
+    background-color: var(--red);
+    border-color: var(--red);
+    border-style: solid;
+    color: white;
+    text-transform: none;
+}
+
+.button-yellow {
+    background-color: transparent;
+    border-color: var(--yellow-button);
+    border-style: solid;
+    color: white;
+    text-transform: none;
+}
+
+.button-yellow:hover {
+    background-color: var(--yellow-button);
+    border-color: var(--yellow-button);
+    border-style: solid;
+    color: white;
+    text-transform: none;
+}
+
+
+/*  =============================
+    === Estilização da Tabela === 
+    =============================   */
+
+.uk-table-striped>thead {
+    background-color: #494b54;
+}
+
+.uk-table-striped>tr:nth-of-type(2n+1),
+.uk-table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: #2a2d35;
+    border-style: none;
+}
+
+.uk-table-striped>tr:nth-of-type(2n),
+.uk-table-striped tbody tr:nth-of-type(2n) {
+    background-color: #383b43;
+    border-style: none;
+}
+
+.table-link a {
+    color: var(--lightgrey);
+    text-decoration: none;
+}
